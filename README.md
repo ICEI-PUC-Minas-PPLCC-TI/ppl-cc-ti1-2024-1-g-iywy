@@ -13,7 +13,7 @@ Além de sua funcionalidade principal, o aplicativo também pode fornecer recome
 
 ## Professores responsáveis
 
-* Whesley
+* Wesley
 * Gustavo
 
 ## Instruções de utilização
