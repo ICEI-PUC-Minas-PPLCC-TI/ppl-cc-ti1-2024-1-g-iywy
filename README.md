@@ -1,8 +1,8 @@
-# Nome do projeto
+# SLASH
 
-Imagine um aplicativo intuitivo que simplifica a divisão de contas em bares e butecos, tornando a experiência de sair com amigos mais agradável e sem o incômodo de cálculos complicados. Com este aplicativo, basta tirar uma foto do recibo da conta, e ele automaticamente identifica os itens e os valores, permitindo que cada pessoa selecione o que consumiu. Além disso, oferece opções para dividir igualmente, de acordo com o consumo de cada um ou até mesmo permitir pagamentos individuais, garantindo uma divisão justa e sem complicações.
+Um aplicativo intuitivo que simplifica a divisão de contas em bares e butecos, tornando a experiência de sair com amigos mais agradável e sem o incômodo de cálculos complicados. Com este aplicativo você pode selecionar o que cada um consumiu, oferecendo opções para dividir igualmente, de acordo com o consumo de cada um ou até mesmo permitir pagamentos individuais, garantindo uma divisão justa e sem complicações.
 
-Além de sua funcionalidade principal, o aplicativo também pode fornecer recomendações de estabelecimentos com base nas preferências dos usuários, promover ofertas especiais e até mesmo permitir a reserva de mesas, agregando valor à experiência de sair para curtir bons momentos com amigos. Com uma interface amigável e recursos inovadores, este aplicativo se torna um companheiro indispensável para quem aprecia a vida noturna e deseja tornar a divisão de contas uma tarefa simples e rápida.
+Além de sua funcionalidade principal, o aplicativo também possui opção de adicionar amigos, favoritar lugares, compartilhamento de link de mesas(as quais agregarão o total a ser pago), carteira própria do aplicativo, entre outras funcionalidades, melhorando a experiência de sair para curtir bons momentos com amigos. Com uma interface amigável e recursos inovadores, este aplicativo se torna um companheiro indispensável para quem aprecia a vida noturna e deseja tornar a divisão de contas uma tarefa simples e rápida.
 
 ## Alunos integrantes da equipe
 
