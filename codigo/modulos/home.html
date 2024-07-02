@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/71efb22d99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/Feedback.css">
+    <link rel="stylesheet" href="../CSS/carteira.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <button id="toggleSidebar"><i class="fa-solid fa-bars"></i></button>
+            <label class="nome">Slash</label><img class="beer" src="../images/beer.svg" alt="beer">
+            
+        </div>
+
+    </header>
+
+    
+    <div class="container">
+        <aside id="sidebar">
+            <div id="sup">
+                <p class="elementoSup" id="lugares"><a href="locais.html">Histórico de Lugares</a></p>
+                <p class="elementoSup" id="produtos"><a href="produtos.html">Histórico de Produtos</a></p>
+                <p class="elementoSup" id="amigos"><a href="amigos.html">Amigos</a></p>
+            </div>
+            <div id="inf">
+                <p class="elementoInf" id="perfil"><a href="perfil.html">Perfil</a></p>
+                <p class="elementoInf" id="config"><a href="config.html">Configurações</a></p>
+            </div>
+            
+        </aside>
+        <main>
+            <div class="corpo"></div>
+            <div id="screen"></div>
+                <div id="perfil" onclick="showCarteira()">
+                    <p style="padding: 10px 20px;
+                    margin: 5px;
+                    text-align: center;
+                    font-size: 16px;
+                    background-color:rgb(102, 6, 158);
+                    color: white;
+                    border-radius: 8px;
+                    border-color: rgb(50, 25, 83);
+                    box-shadow:  0px 10px 40px #00000056;">Carteira</p>
+                </div>
+                <div id="carteira" style="display: none; margin-bottom: 50px;">
+                    <div>
+                        <h2>Saldo:</h2> <h2 id="saldo">R$ 0.00</h2>
+                    </div>
+                    <button onclick="showDeposit()">Depositar</button>
+              
+                </div>
+                <div id="optionsContainer" style="display: none;">
+                    <h2>Opções de Pagamento:</h2>
+                    <button onclick="showInput('debito')">Débito</button>
+                    <button onclick="showInput('credito')">Crédito</button>
+                    <button onclick="showInput('pix')">PIX</button>
+                </div>
+                <div id="inputContainer" style="display: none;">
+                    <input type="number" id="valor" placeholder="Digite o valor">
+                    <button onclick="deposit()">Confirmar</button>
+                </div>
+                
+            
+            
+            
+            <button id="criar" style="align-items: cneter;">Criar Slash</button>
+            
+            <div id="dados" style="text-align: center;">
+
+                <input type="text" id="CEP" placeholder="CEP">
+                <input type="text" id="numero" placeholder="Número">
+                <input type="text" id="nome" placeholder="Nome">
+                    
+                <div id="dadosCEP"></div>
+                    <button id="buscaCEP" onclick="novaSlash()">Buscar</button> 
+                
+            </div>
+            
+            
+            
+            
+            <div id="mesa">
+                <!--
+                    <div class="container-link">
+                        <h1>Slash Group</h1>
+                        <span>
+                            <button id="generate-invite">Generate Invite</button>
+                            <p id="invite-link" class="invite-link"></p>
+                        </span>
+                        <span><button id="copy-link">Copy Link</button></span>
+                        
+                        
+                    </div>
+                    -->
+                <div id="nomeDoLugar" style="margin-top: 60px;"></div>
+
+                <div class="container">
+                    <div id="users-container">
+                        
+                    </div>
+                    <button id="add-person-btn" onclick="addPerson()">+ Pessoa</button>
+                    <div id="person-form">
+                        
+                    </div>
+                    <button id="add-product-btn">+ Produto</button>
+                    <div id="product-form" class="hidden">
+                        <input type="text" id="product-name" placeholder="Nome do Produto">
+                        <input type="number" id="product-price" placeholder="Preço do Produto">
+                        <div id="user-selection"></div>
+                        <button id="confirm-product-btn">Confirmar Produto</button>
+                    </div>
+                    <div id="product-history">
+                        
+                    </div>
+                    <button id="close-bill-btn">Fechar Conta</button>
+                    <div id="bill-summary" class="hidden">
+                        
+                    </div>
+                    <button id="confirm" onclick="confirm()">Confirmar pagamento</button>
+                    <div class="containerFeedback" id="feedback" style="display: none;">
+                        <h3>Feedback do Cliente</h3>
+                        <div class="rating" id="feedback" ">
+                            <input type="radio" name="rating" id="star6" value="6">
+                            <label for="star6"></label>
+                            <input type="radio" name="rating" id="star5" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" name="rating" id="star4" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" name="rating" id="star3" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" name="rating" id="star2" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" name="rating" id="star1" value="1">
+                            <label for="star1"></label>
+                        </div>
+                        <textarea id="comment" placeholder="Deixe seu comentário aqui..."></textarea>
+                        <button onclick="submitFeedback()">Enviar Feedback</button>
+                        <button onclick="viewFeedbacks()">Visualizar Feedbacks</button>
+                        <div id="feedback-list" style="margin-top: 20px;"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </main>
+    </div>
+    
+    
+    
+</body>
+<script src="../JS/Clink.js"></script>
+<script src="../JS/home.js"></script>
+<script src="../JS/Feedback.js"></script>
+<script src="../JS/carteira.js"></script>
+</html>
